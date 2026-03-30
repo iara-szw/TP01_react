@@ -2,11 +2,12 @@ import './Formulario.css'
 import Input from './Input.jsx'
 import Parrafo from './Parrafos.jsx'
 import Boton from './Boton.jsx'
+import Titulo from './Titulo.jsx'
 function Formulario(){
 
   return(
     <>
-          <h2>Crear mi Cita</h2>
+          <Titulo contenido="Crear mi cita"/>
             <form>
     <Input label="Nombre Mascota" nombre="mascota" placeholder="Ingresa el nombre de la mascota"/>
     <Input label="Nombre dueño" nombre="duenio" placeholder="Ingresa el nombre del dueño"/>

@@ -1,10 +1,11 @@
 import Cita from './Cita.jsx'
 import './Listado.css'
+import Titulo from './Titulo.jsx'
 
 function Listado({citas}){
     return(
         <>
-            <h2>Administra tus citas</h2>
+            <Titulo contenido="Administra tus citas"/>
             {citas.map((cita, index) => (
         <Cita key={index} cita={cita} />
       ))}
