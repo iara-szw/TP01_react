@@ -2,9 +2,9 @@ import { useState } from 'react'
 import Formulario from './componentes/Formulario.jsx'
 import './App.css'
 import Listado from './componentes/Listado.jsx' 
-
+import TituloHeader from './componentes/tituloHeader.jsx'
 function App() {
-  const [citas, setCitas] = useState([
+  const [citas] = useState([
     {
       mascota: "Nina",
       duenio: "Martin",
@@ -21,7 +21,7 @@ function App() {
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"></link>
 </head>
-<h1>Administrador de pacientes</h1>
+<TituloHeader contenido="Administrador de pacientes"/>
       <div class="container">
         <div class="row">
           <div class="one-half column">
