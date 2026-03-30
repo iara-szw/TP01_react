@@ -1,15 +1,18 @@
 import './Cita.css'
-
+import Boton from './Boton.jsx'
+import Info from './Informacion.jsx'
 function Cita({cita}){
     return (
         <>
           <div class="cita">
-              <p>Mascota: <span>{cita.mascota}</span></p>
-              <p>Dueño: <span>{cita.duenio}</span></p>
-              <p>Fecha: <span>{cita.fecha}</span></p>
-              <p>Hora: <span>{cita.hora}</span></p>
-              <p>Sintomas: <span>{cita.sintomas}</span></p>
-            <button class="button eliminar">Eliminar ×</button>
+            <Info nombre="Mascota" infor={cita.mascota}></Info>
+                        <Info nombre="Dueño" infor={cita.duenio}></Info>
+            <Info nombre="Fecha" infor={cita.fecha}></Info>
+            <Info nombre="Hora" infor={cita.hora}></Info>
+            <Info nombre="Sintomas" infor={cita.sintomas}></Info>
+            <Info nombre="Mascota" infor={cita.mascota}></Info>
+
+              <Boton clase="button eliminar" nombre="Eliminar x"/>
             </div>
 </>
     )
