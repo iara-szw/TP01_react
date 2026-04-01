@@ -10,8 +10,6 @@ function Cita({cita}){
             <Info nombre="Fecha" infor={cita.fecha}></Info>
             <Info nombre="Hora" infor={cita.hora}></Info>
             <Info nombre="Sintomas" infor={cita.sintomas}></Info>
-            <Info nombre="Mascota" infor={cita.mascota}></Info>
-
               <Boton clase="button eliminar" nombre="Eliminar x"/>
             </div>
 </>
