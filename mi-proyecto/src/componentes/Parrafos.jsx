@@ -1,6 +1,6 @@
-function parrafo({label}){
+function parrafo({label, nombre}){
     return (<> <label>{label}</label>
-    <textarea name={label} class="u-full-width"></textarea></>)
+    <textarea name={nombre || label} class="u-full-width"></textarea></>)
 }
 
 export default parrafo 

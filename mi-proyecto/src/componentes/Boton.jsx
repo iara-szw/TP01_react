@@ -1,7 +1,9 @@
-function Boton({nombre,tipo,clase}){
-    return(<>
-    <button type={tipo}class={clase} >{nombre}</button>
-    </>)
+function Boton({nombre, tipo = "button", clase, onClick}){
+    return (
+        <>
+            <button type={tipo} className={clase} onClick={onClick}>{nombre}</button>
+        </>
+    )
 }
 
 export default Boton
